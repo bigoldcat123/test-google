@@ -38,6 +38,7 @@ export default async function Home() {
       <Test user={session?.user} ></Test>
       <div>
       {cid} eeeee</div>
+      <div>wocao  wsm meiyou dongxi </div>
     </div>
   );
 }
