@@ -29,12 +29,15 @@ function SignOut() {
 export default async function Home() {
   const session = await auth()
   console.log(session);
+  const cid = process.env.AUTH_GOOGLE_ID
   
   return (
     <div>
       <SignIn></SignIn>
       <SignOut></SignOut>
       <Test user={session?.user} ></Test>
+      <div>
+      {cid} eeeee</div>
     </div>
   );
 }
